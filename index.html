@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website">
+    <title>Daniel | NebN</title>
+    <style>
+        /* Basic CSS Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #222831;
+            color: #EEEEEE;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        a {
+            text-decoration:none;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            color: #EEEEEE;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 0.5em 0 1.5em;
+            color: #EEEEEE;
+        }
+
+        hr {
+          border: none;
+          border-top: 1px solid #EEEEEE;
+          margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 1em 3em;
+            margin-top: 1em;
+            border: 2px solid #EEEEEE;
+            background-color: #393E46;
+            color: #EEEEEE;
+            border-radius: 0.25em;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .standalone-button {
+          width: 8em;
+          height: 4em;
+          margin: 1em;
+          background-size: 3em 3em; 
+          background-repeat: no-repeat;
+          background-position: center;
+          transition: 0.3s;
+        }
+
+        .standalone-button:hover {
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add shadow */
+          transform: scale(1.1);     /* Slightly scale up the button */
+        }
+
+        .github {
+          background-image: url('res/github.png');
+        }
+
+        .mail {
+          background-image: url('res/mail.png');
+          background-size: 3.8em 3.8em; 
+        }
+
+        .email {
+            font-size: 1.2em;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns:none;
+            gap: 1em;
+            margin-top: 2em;
+        }
+
+        .project {
+            background-color: #393E46;
+            border: 1px solid #EEEEEE;
+            padding: 1em;
+            border-radius: 0.5em;
+            transition: box-shadow 0.3s;
+        }
+
+        .project:hover {
+            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-title {
+            font-size: 1.2em;
+            color: #EEEEEE;
+            margin-bottom: 0.5em;
+        }
+
+        .project-description {
+            color: #EEEEEE;
+            font-size: 0.9em;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daniel</h1>
+        <p>There was an attempt</p>
+        <section class="buttons">
+          <a class="button github standalone-button" href="https://github.com/NebN"  target="_blank"></a>
+          <a class="button mail standalone-button" href="mailto:nebn@nebn.dev"  target="_blank"></a>
+        </section>
+        <hr>
+        <section class="projects">
+            <a href="https://github.com/NebN/unraid-simple-monitoring-api" target="_blank">
+                <div class="project" >
+                    <h2 class="project-title">Unraid Simple Monitoring API</h2>
+                    <p class="project-description">Simple REST API to monitor Unraid's basic metrics</p>
+                    <div class="badges">
+                        <img src="https://img.shields.io/github/stars/NebN/unraid-simple-monitoring-api?style=flat" alt="GitHub Stars">
+                        <!--<img src="https://img.shields.io/docker/pulls/nebn/unraid-simple-monitoring-api?style=flat" alt="Docker Hub Pulls">-->
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/NebN/file-mover-daemon" target="_blank">
+                <div class="project">
+                    <h2 class="project-title">File Mover Daemon</h2>
+                    <p class="project-description">Watches your folders and acts on changes</p>
+                    <div class="badges">
+                        <img src="https://img.shields.io/github/stars/NebN/file-mover-daemon?style=flat" alt="GitHub Stars">
+                    </div>
+                </div>
+            </a>
+        </section>
+    </div>
+</body>
+</html>
